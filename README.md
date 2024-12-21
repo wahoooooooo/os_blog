@@ -1,2 +1,2 @@
 # os_blog
-rcore学习总结
+os学习总结
