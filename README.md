@@ -251,30 +251,30 @@ Response time histogram:
 ```
 Summary:
   Success rate:	100.00%
-  Total:	20.0148 secs
-  Slowest:	0.0220 secs
+  Total:	20.0123 secs
+  Slowest:	0.0253 secs
   Fastest:	0.0001 secs
-  Average:	0.0012 secs
-  Requests/sec:	4996.3035
+  Average:	0.0011 secs
+  Requests/sec:	4996.9388
 
-  Total data:	15.83 MiB
-  Size/request:	166 B
-  Size/sec:	809.95 KiB
+  Total data:	15.93 MiB
+  Size/request:	167 B
+  Size/sec:	814.93 KiB
 
 Response time histogram:
   0.000 [1]     |
-  0.002 [89448] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-  0.004 [8290]  |■■
-  0.007 [1461]  |
-  0.009 [401]   |
-  0.011 [181]   |
-  0.013 [160]   |
-  0.015 [32]    |
-  0.018 [4]     |
-  0.020 [12]    |
-  0.022 [10]    |
+  0.003 [93233] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.005 [5718]  |■
+  0.008 [637]   |
+  0.010 [149]   |
+  0.013 [92]    |
+  0.015 [39]    |
+  0.018 [21]    |
+  0.020 [61]    |
+  0.023 [35]    |
+  0.025 [14]    |
 ```
-项目代母结构如下：
+项目代码结构如下：
 ![](./imgs/reactor_epoll_structure.png)
 
 目前实现比较简单，从压测的表现可以看出io_uring和epoll性能相当，后面考虑丰富实现，并进行进一步的测试。
